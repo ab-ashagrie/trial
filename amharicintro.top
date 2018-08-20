@@ -1,0 +1,13 @@
+topic: ~introductions keep repeat []
+
+t: ( %input<%userfirstline %input>0 ) 
+	^keep()
+	[እንኩአን ተመለሱ] [እንዴት ኖ] [ስለተመለሱ ደስ ብሎኛል][ሰላም በንደገና]
+
+t: ( %input<%userfirstline )
+	^keep()
+	[ሄሎ][ሃይ][ሄይ][ሰላም]
+
+r: ከዚህ በፊት መተው ያቃሉ ?
+   a: (~አዎ) እንኩአን በንደገና ተመለሱ።
+   a: (~አይ) እንኩአን ወደመጀመሪያ ጊዜዎት መጡ።

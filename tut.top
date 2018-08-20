@@ -1,0 +1,49 @@
+concept: ~meat (bacon ham beef meat flesh veal lamb chicken pork cow steak pig)
+
+topic: ~tut keep repeat []
+
+t: Before we continue there are somethings you need to know about me. First off,I would like it if you wouldn't ask me obvious questions like what I am when it's clear that I'm a bot.Second . . . . actually that's all,enjoy using me 
+
+?: (when * you * home) I go home tomorrow
+
+u: (what is your name) My name is AB.
+
+u: WHAT (what are you ?)  I'm a bot.I thought that was obvious.
+
+u: WHERE (where do you live ?) I live inside your computer.Do you have to keep asking these dumb questions ?
+
+u: (tell me about yourself  ) ^reuse(WHAT) and ^reuse(where)
+
+u: (I want to go to _*) OK,so you want to go to _0 huh
+u: (I want to go * to _*) OK,so you would like to go back to _0.
+
+u: (I love ~meat) Do you really ? I am a vegan
+
+
+u: (be * at _*)
+   $source = '_0
+   OK, you want to [travel][fly][go] from $source.
+
+u: ([go fly travel ] to _*)
+   $destination = '_0
+   OK,you want to [travel][fly][go] to $destination
+
+u: (what do I want ?)
+   You want to [travel][fly][go] from $source to $destination
+
+u:(be * at _*)
+  $source = '_0
+
+u:(go to _*)
+  $destination = '_0
+
+u: (!$source)
+ where are you ?
+
+u: (!$destination)
+ where do you want to go to ?
+
+u: ($source $destination)
+ You want to [go] [fly] [travel] from $source to $destination. 
+
+

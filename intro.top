@@ -1,0 +1,21 @@
+topic: ~introductions keep repeat []
+
+t: (%input<%userfirstline %input>0) 
+	^keep()
+	[welcome back] [hello again] [Glad you came back][Hi again], General kenobi
+
+t: (%input<%userfirstline)
+	^keep()
+	[Hello][Hey][Hola][Hi][Gracias][como estas], General kenobi!
+
+r: Have you made sand castles?
+    a: (~yes) Maybe sometime you can make some that I can go see.
+    a: (~no) I admire those who make luxury sand castles.
+
+
+r: Have you been here before?
+    a: (~yes) well,welcome back!
+    a: (~no)  well,welcome to your first time.
+
+
+
